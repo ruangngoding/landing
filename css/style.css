@@ -2,8 +2,6 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 li,  a, button {
@@ -11,6 +9,10 @@ li,  a, button {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+}
+
+body {
+  font-family: "nunito", sans-serif;
 }
 
 header {
