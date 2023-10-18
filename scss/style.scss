@@ -28,19 +28,20 @@ body {
 };
 
 header {
-    @include tengah(flex-end);
+    @include tengah(flex-end, row);
     background-color: map-get($warna, 'putih');
-    position:sticky;
+    position: sticky;
     top: 0;
     padding: 10px 2%;
     box-shadow: 3px 0 4px map-get($warna, 'hitam' );
     z-index: 9999;
+    font-size: 16px;
     li, a, button {
         font-size: 16px;
         text-decoration: none;
     }
     li, a {
-        color: map-get($warna, 'hitam')
+        color: map-get($warna, 'hitam');
     }
     .logonav {
         width: 64px;
@@ -82,6 +83,7 @@ header {
         color: map-get($warna, 'putih');
     }
 };
+
 
 #content button:hover,
 header .sign button:hover {
@@ -139,10 +141,10 @@ header .sign button:hover {
             height: 209px;
             .kurikurum, .blajarflex, .sertifikat {
                 text-align: left;
-                height: 33.5%;
+                height: 33.1%;
                 line-height: 66.5px;
                 justify-content: space-between;
-                padding-right: 10px;
+                padding: 0 10px 0 10px;
                 border-bottom: 1px solid map-get($warna, 'hitam');
                 font-size: 16px;
             }
@@ -210,34 +212,42 @@ header .sign button:hover {
     box-shadow: 0 0 4px map-get($warna, 'hitam');
     width: 60%;
     display: flex;
-    margin: 50px auto;
-    .profil {
-        height: 348px;
-        width: 284px;
-    }
-    .kt {
-        .tprofil, .pmedsos {
-            margin: 0;
-        }
-        .tprofil {
-            height: 70%;
-        }
-        .pmedsos {
-            display: flex;
-            height: 30%;
-            align-items: center;
-        }
-        padding: 20px 10px;
-        .lorempp {
-            font-size: 20px;
-        }
-        .p {
-            font-size: 16px;
-        }
-        .logomedsos {
-            height: 24px;
-            width: 24px;
-            margin-right: 5px;
+    margin: 50px auto 20px;
+    ul {
+        li {
+            list-style: none;
+            .profil {
+                height: 348px;
+                width: 284px;
+                display: inline-block;
+                float: inline-start;
+                padding: 0 20px 0 0;
+            }
+            .kt {
+                .tprofil, .pmedsos {
+                    margin: 0;
+                }
+                .tprofil {
+                    height: 70%;
+                }
+                .pmedsos {
+                    display: flex;
+                    height: 30%;
+                    align-items: center;
+                }
+                padding: 20px 10px;
+                .lorempp {
+                    font-size: 20px;
+                }
+                .p {
+                    font-size: 16px;
+                }
+                .logomedsos {
+                    height: 24px;
+                    width: 24px;
+                    margin-right: 5px;
+                }
+            }
         }
     }
 }
@@ -245,12 +255,12 @@ header .sign button:hover {
 #arrow-profil {
     display: flex;
     justify-content: flex-end;
-    margin-top:20px;
+    margin-top:10px;
     margin-right: 245px;
     margin-bottom: 50px;
+    cursor: pointer;
     img {
         width: 32px;
-        cursor: pointer;
         align-items:end;
         margin: 0 10px;
     }
