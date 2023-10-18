@@ -1,67 +1,97 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
-body {
-  font-family: "nunito", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li,  a, button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: row;
-  background-color: #fff;
-  position: sticky;
-  top: 0;
-  padding: 10px 2%;
-  box-shadow: 3px 0 4px #000;
-  z-index: 9999;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 0 1%;
+    background-color: white;
 }
-header li, header a, header button {
-  font-size: 16px;
-  text-decoration: none;
+
+nav {
+    display: flex; 
+    align-items: center; 
 }
-header li, header a {
-  color: #000;
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
 }
-header .logonav {
-  width: 64px;
-  height: 49px;
-  cursor: pointer;
+
+.nav-list li {
+    margin: 0;
 }
-header nav {
-  margin-right: auto;
+
+.nav-list li a {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333; 
 }
-header nav ul li {
-  padding: 0 20px;
-  display: inline-block;
+
+.nav-list li:hover a {
+    color:#053B50 ;
 }
-header nav ul li a {
-  transition: all 0.3s ease 0s;
+
+.logo {
+    cursor: pointer;
+    width: 70px;
+    margin-right: 20px; 
 }
-header nav ul li a:hover {
-  color: #176B87;
+
+.button-container {
+    display: flex; 
+    gap: 20px; 
+    margin-left: auto; 
 }
-header button {
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  padding: 12px 30px;
-  margin-right: 20px;
-  transition: all 0.3s ease 0s;
+
+.button-container button{
+    background-color: transparent;
+    color: #053B50;
+    border: 3px solid #053B50;
+    border-radius: 6px;
+    padding: .5rem 1rem;
 }
-header .sign button {
-  background-color: #053B50;
-  color: #fff;
-  border: 3px solid #053B50;
+
+.button-container a.log:hover button {
+    background-color: #053B50;
+    color: white;
+    border: 3px solid transparent;
 }
-header .log button {
-  color: #053B50;
-  background-color: #fff;
-  border: 3px solid #053B50;
+
+.button-container a.sign button{
+    background-color: #053B50;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 6px;
 }
-header .log button:hover {
-  background-color: #053B50;
-  color: #fff;
+
+.button-container a.sign:hover button{
+    background-color: #03222e;
+    color: white;
+    border: 3px solid transparent;
 }
+
 
 #content button:hover,
 header .sign button:hover {
