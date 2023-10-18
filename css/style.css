@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
+body {
+  font-family: "nunito", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  padding: 10px 2%;
+  box-shadow: 3px 0 4px #000;
+  z-index: 9999;
+}
+header li, header a, header button {
+  font-size: 16px;
+  text-decoration: none;
+}
+header li, header a {
+  color: #000;
+}
+header .logonav {
+  width: 64px;
+  height: 49px;
+  cursor: pointer;
+}
+header nav {
+  margin-right: auto;
+}
+header nav ul li {
+  padding: 0 20px;
+  display: inline-block;
+}
+header nav ul li a {
+  transition: all 0.3s ease 0s;
+}
+header nav ul li a:hover {
+  color: #176B87;
+}
+header button {
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  margin-right: 20px;
+  transition: all 0.3s ease 0s;
+}
+header .sign button {
+  background-color: #053B50;
+  color: #fff;
+  border: 3px solid #053B50;
+}
+header .log button {
+  color: #053B50;
+  background-color: #fff;
+  border: 3px solid #053B50;
+}
+header .log button:hover {
+  background-color: #053B50;
+  color: #fff;
+}
+
+#content button:hover,
+header .sign button:hover {
+  background-color: #03222e;
+  color: #fff;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: row;
+  height: 80vh;
+}
+#content span h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+#content span h3 {
+  font-size: 16px;
+}
+#content span .content img {
+  display: inline-block;
+  width: 382px;
+  height: 326px;
+}
+#content span button {
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  transition: all 0.3s ease 0s;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: #053B50;
+  color: #fff;
+  border: 3px solid #053B50;
+}
+
+.kelebihan {
+  background-color: #a9a9a9;
+  text-align: center;
+  margin: 50px 0;
+  padding: 30px;
+}
+.kelebihan h2 {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.kelebihan p {
+  font-size: 16px;
+}
+.kelebihan .kel {
+  margin: 35px 0 40px 0;
+  text-align: center;
+}
+.kelebihan .kel .keu {
+  background-color: #fff;
+  height: 209px;
+}
+.kelebihan .kel .keu .kurikurum, .kelebihan .kel .keu .blajarflex, .kelebihan .kel .keu .sertifikat {
+  text-align: left;
+  height: 33.5%;
+  line-height: 66.5px;
+  justify-content: space-between;
+  padding-right: 10px;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+}
+.kelebihan .kel span {
+  display: inline-block;
+  flex-direction: row;
+}
+
+#learningpath {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px auto;
+  position: relative;
+}
+#learningpath h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#learningpath .learningpathstyle {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#learningpath .learningpathstyle .path-item {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  transition: all 1s ease;
+  margin-bottom: 1px;
+}
+#learningpath .learningpathstyle .path-item img {
+  width: 100%;
+  height: 100px;
+}
+#learningpath .learningpathstyle .path-item p {
+  background-color: #053B50;
+  color: #fff;
+  height: 100vh;
+  padding: 5px;
+}
+#learningpath .learningpathstyle .path-item:hover {
+  transform: translate(0, -120px);
+}
+
+#arrow-learning {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 160px;
+  margin-bottom: 30px;
+}
+#arrow-learning img {
+  width: 32px;
+  cursor: pointer;
+  align-items: end;
+  margin: 0 10px;
+}
+
+#tentangkami {
+  background-color: #fafafa;
+  box-shadow: 0 0 4px #000;
+  width: 60%;
+  display: flex;
+  margin: 50px auto;
+}
+#tentangkami .profil {
+  height: 348px;
+  width: 284px;
+}
+#tentangkami .kt {
+  padding: 20px 10px;
+}
+#tentangkami .kt .tprofil, #tentangkami .kt .pmedsos {
+  margin: 0;
+}
+#tentangkami .kt .tprofil {
+  height: 70%;
+}
+#tentangkami .kt .pmedsos {
+  display: flex;
+  height: 30%;
+  align-items: center;
+}
+#tentangkami .kt .lorempp {
+  font-size: 20px;
+}
+#tentangkami .kt .p {
+  font-size: 16px;
+}
+#tentangkami .kt .logomedsos {
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
+
+#arrow-profil {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 245px;
+  margin-bottom: 50px;
+}
+#arrow-profil img {
+  width: 32px;
+  cursor: pointer;
+  align-items: end;
+  margin: 0 10px;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .footer hr {
+  width: 80%;
+}
+footer .footer .Copyright {
+  height: 70px;
+  line-height: 70px;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

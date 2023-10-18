@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Ngoding</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/asset/img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/asset/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/asset/img/favicon_io/favicon-16x16.png">
+    <link rel="android-chrome-192x192-icon" sizes="192x192" href="/asset/img/favicon_io/android-chrome-192x192.png">
+    <link rel="android-chrome-512x512-icon" sizes="512x512" href="/asset/img/favicon_io/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header id="navbar">
+        <img class="logonav" src="/asset/img/logo.png" alt="logo" style="width: 64px; height: 49px">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="">Learning Path</a></li>
+                <li><a href="">Tentang Kami</a></li>
+            </ul>
+        </nav>
+        <a href="" class="cta"><button>Masuk</button></a>
+        <a href="" class="cta"><button>Daftar</button></a>
+    </header>
+    <div class="ccontent">
+        <span><h1><pre>Nikmatilah pembelajaran yang
+mendalam dan bermakna</pre></h1>
+        <h3>Belajar terarah dengan learning path mendalam dan bermakna</h3>
+        <button type="button">Belajar Sekarang</button></span>
+        <span><img src="/asset/img/orang.png" alt=""></span>
+    </div>
+    <div class="kelebihan">
+        <h2>Kenapa Ruang Ngoding berbeda</h2>
+        <p>Ruang Ngoding menghadirkan materi yang sesuai </p>
+        <p>dengan dunia kerja, serta instruktur yang berpengalaman dibidangnya</p>
+        
+        <div class="kel">
+            <span class="keu">
+                <div class="kkurikurum">Kurikulum terstruktur</div>
+                <div class="kblajarflex">Belajar Fleksibel</div>
+                <div class="ksertifikat">Sertifikat Penyelesaian</div>
+            </span>
+            <span><img src="/asset/img/logo.png" alt="" style="width:231px; height: 209px;"></span>
+        </div>
+
+    </div>
+    
+
+<script>
+window.addEventListener('scroll', function () {
+  // Cek apakah lebar layar kurang dari 768px (tampilan mobile)
+    if (window.innerWidth < 768) {
+    var navbar = document.getElementById('navbar');
+
+    if (window.pageYOffset > 0) {
+        navbar.style.position = 'fixed';
+        navbar.style.top = '0';
+    } else {
+        navbar.style.position = 'relative';
+    }
+    }
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+</div>
+            <div class="backweb">
+                <img src="/asset/img/back.jpg" alt="">
+                <p>Pelajari dasar JavaScript, dari fundamental, sintaks dan fitur ES6, hingga konsep automation test menggunakan framework populer.</p>
+            </div>
+            <div class="androiddev">
+                <img src="/asset/img/android.jpg" alt="">
+                <p>Buat aplikasi pertamamu pada Android Studio dengan mempelajari dasar Activity, Intent, View & ViewGroup, Style & Theme sampai RecyclerView.</p>
+            </div>
+            <div class="iosdev">
+                <img src="/asset/img/ios.jpg" alt="">
+                <p>Belajar bahasa Swift buat kamu yang ingin mempelajari konsep dasar pemrograman dalam mengembangkan aplikasi iOS, iPadOS, dan macOS.</p>
+            </div>
