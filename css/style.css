@@ -1,67 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+li,  a, button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 body {
-  font-family: "nunito", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: row;
-  background-color: #fff;
-  position: sticky;
   top: 0;
-  padding: 10px 2%;
-  box-shadow: 3px 0 4px #000;
-  z-index: 9999;
-  font-size: 16px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin-inline: auto;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  padding: 2px 1%;
+  background-color: white;
 }
-header li, header a, header button {
-  font-size: 16px;
+
+nav {
+  display: flex; 
+  align-items: center; 
+}
+
+.nav-list {
+  list-style: none;
+  display: flex; 
+  gap: 20px; 
+  align-items: center; 
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list li a {
   text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333; 
 }
-header li, header a {
-  color: #000;
+
+.nav-list li:hover a {
+  color:#053B50 ;
 }
-header .logonav {
-  width: 64px;
-  height: 49px;
+
+.logo {
   cursor: pointer;
+  width: 70px;
+  margin-right: 20px; 
 }
-header nav {
-  margin-right: auto;
+
+.button-container {
+  display: flex; 
+  gap: 20px; 
+  margin-left: auto; 
 }
-header nav ul li {
-  padding: 0 20px;
-  display: inline-block;
-}
-header nav ul li a {
-  transition: all 0.3s ease 0s;
-}
-header nav ul li a:hover {
-  color: #176B87;
-}
-header button {
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  padding: 12px 30px;
-  margin-right: 20px;
-  transition: all 0.3s ease 0s;
-}
-header .sign button {
-  background-color: #053B50;
-  color: #fff;
-  border: 3px solid #053B50;
-}
-header .log button {
+
+.button-container button{
+  background-color: transparent;
   color: #053B50;
-  background-color: #fff;
   border: 3px solid #053B50;
+  border-radius: 6px;
+  padding: .5rem 1rem;
 }
-header .log button:hover {
+
+.button-container a.log:hover button {
   background-color: #053B50;
-  color: #fff;
+  color: white;
+  border: 3px solid transparent;
+}
+
+.button-container a.sign button{
+  background-color: #053B50;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 6px;
+}
+
+.button-container a.sign:hover button{
+  background-color: #03222e;
+  color: white;
+  border: 3px solid transparent;
 }
 
 #content button:hover,
@@ -71,59 +106,67 @@ header .sign button:hover {
 }
 
 #content {
+  max-width: 1200px;
+  width: 100%;
+  height: 90vh;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-direction: row;
-  height: 80vh;
 }
-#content span h1 {
-  font-size: 32px;
-  font-weight: bold;
+.content-desc h1 {
+  font-size: 2rem;
+  margin-block: 1rem;
+  font-weight: 700;
 }
-#content span h3 {
-  font-size: 16px;
+.content-desc p {
+  font-size: 1rem;
 }
-#content span .content img {
-  display: inline-block;
-  width: 382px;
-  height: 326px;
+.content-img {
+  flex: 1;
+  display: flex;
 }
-#content span button {
+ .content-img img {
+  margin: auto;
+  min-width: 200px;
+  width: 400px;
+}
+#content button {
   border-radius: 6px;
   border: none;
   cursor: pointer;
-  padding: 12px 30px;
+  padding: 0.75rem 2rem;
   transition: all 0.3s ease 0s;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin-right: 1.25rem;
+  margin-top: 1.25rem;
   background-color: #053B50;
   color: #fff;
   border: 3px solid #053B50;
+  font-family: 'Nunito', sans-serif;
 }
 
 .kelebihan {
   background-color: #a9a9a9;
   text-align: center;
-  margin: 50px 0;
-  padding: 30px;
+  margin: 3.125rem 0;
+  padding: 2rem;
 }
 .kelebihan h2 {
-  font-size: 32px;
-  margin-top: 40px;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 .kelebihan p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .kelebihan .kel {
-  margin: 35px 0 40px 0;
+  margin: 2rem 0 2.5rem 0;
   text-align: center;
 }
 .kelebihan .kel .keu {
   background-color: #fff;
-  height: 209px;
 }
 .kelebihan .kel .keu .kurikurum, .kelebihan .kel .keu .blajarflex, .kelebihan .kel .keu .sertifikat {
   text-align: left;
@@ -144,7 +187,7 @@ header .sign button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 3.125rem auto;
   position: relative;
 }
 #learningpath h2 {
@@ -181,10 +224,9 @@ header .sign button:hover {
 
 #arrow-learning {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-  margin-right: 160px;
-  margin-bottom: 30px;
+  justify-content: center;
+  cursor: pointer;
+
 }
 #arrow-learning img {
   width: 32px;
@@ -204,10 +246,9 @@ header .sign button:hover {
   list-style: none;
 }
 #tentangkami ul li .profil {
-  height: 348px;
-  width: 284px;
-  display: inline-block;
   float: inline-start;
+  /* height: 348px;
+  width: 284px; */
   padding: 0 20px 0 0;
 }
 #tentangkami ul li .kt {
@@ -238,17 +279,17 @@ header .sign button:hover {
 
 #arrow-profil {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
-  margin-right: 245px;
-  margin-bottom: 50px;
+  justify-content: center;
   cursor: pointer;
+
 }
 #arrow-profil img {
   width: 32px;
   align-items: end;
   margin: 0 10px;
 }
+
+
 
 footer {
   justify-content: center;
@@ -263,3 +304,51 @@ footer .footer .Copyright {
   line-height: 70px;
   font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 1rem 1rem;
+  }
+  
+  #content {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    height: 100vh;
+  }
+
+  .content-img {
+    order: -1;
+  }
+  
+  .content-img img {
+    margin: auto;
+    min-width: 200px;
+    width: 300px;
+  }
+
+  #tentangkami {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #tentangkami .lorempp {
+    display: none;
+  }
+
+  #tentangkami ul li .profil {
+    padding: 0;
+  }
+
+  #learningpath .item-desc {
+    display: none;
+  }
+
+  #learningpath .learningpathstyle .path-item:hover {
+    transform: none;
+  }
+
+  .logo {
+    width: 50px;
+  }
+}
