@@ -86,3 +86,17 @@ header .arrow-p #arrow-down {
 .card .profil button:hover {
     background-color: #03222e;
 }
+
+footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .footer hr {
+    width: 80%;
+}
+footer .footer .Copyright {
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+}
