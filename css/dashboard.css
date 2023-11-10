@@ -44,8 +44,136 @@ header .profil {
   line-height: 3.3em;
   border: 2px solid #053B50;
   margin-right: 5px;
+  cursor: pointer;
 }
 header .arrow-p #arrow-down {
   width: 32px;
   height: 32px;
-}/*# sourceMappingURL=dashboard.css.map */
+  cursor: pointer;
+}
+
+.container {
+  margin: 0;
+  background-image: url(/asset/img/AnyConv.com__alex-shutin-kKvQJ6rK6S4-unsplash.webp);
+  width: 100%;
+  height: 293px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.container h1 {
+  font-size: 34px;
+}
+.container h2 {
+  font-size: 18px;
+}
+.container h1, .container h2 {
+  font-weight: bold;
+  color: #fff;
+  margin-left: 30px;
+  padding: 3px;
+}
+
+.aktivitas {
+  padding: 15px 10px;
+  margin: 40px auto;
+  width: 80%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+  font-size: 16px;
+  overflow: auto;
+}
+.aktivitas img, .aktivitas h5 {
+  display: inline;
+}
+.aktivitas h5 {
+  font-weight: bold;
+}
+
+.aktivitasc {
+  width: 80%;
+  background-color: #d7d5d5;
+  margin: 50px auto;
+  height: 100px;
+  padding: 15px;
+}
+
+.sertifikat {
+  padding: 15px 10px;
+  margin: 40px auto;
+  width: 80%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  overflow: auto;
+}
+.sertifikat img, .sertifikat h5 {
+  display: inline;
+}
+.sertifikat h5 {
+  font-weight: bold;
+}
+
+.sertifikatc {
+  width: 80%;
+  background-color: #d7d5d5;
+  margin: 50px auto;
+  height: 100px;
+  padding: 15px;
+}
+
+.sertifikatc a,
+.sertifikatc button {
+  text-decoration: none;
+}
+
+.sertifikatc button {
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  transition: all 0.3s ease 0s;
+  background-color: #176B87;
+  color: #fff;
+}
+
+.sertifikatc button:hover {
+  background-color: #03222e;
+}
+
+.aktivitasc a,
+.aktivitasc p,
+.sertifikatc a,
+.sertifikatc p {
+  display: inline-flex;
+}
+
+.aktivitasc a,
+.sertifikatc a {
+  float: right;
+  color: #000000
+}
+
+.k {
+  height: 100px;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .footer hr {
+  width: 80%;
+}
+footer .footer .Copyright {
+  height: 70px;
+  line-height: 70px;
+  font-size: 14px;
+}
+
+
