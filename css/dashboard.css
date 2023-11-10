@@ -12,7 +12,6 @@ header {
   position: sticky;
   top: 0;
   padding: 10px 2%;
-  box-shadow: 3px 0 4px #000;
   z-index: 9999;
   font-size: 16px;
   padding-right: 10%;
@@ -23,12 +22,8 @@ header li, header a {
   color: #000;
   margin-right: 10px;
 }
-header a {
-  transition: all 0.3s ease 0s;
-}
 header a img {
-  width: 184px;
-  height: 47px;
+  width: 180px;
   cursor: pointer;
 }
 header a:hover {
@@ -48,7 +43,6 @@ header .profil {
 }
 header .arrow-p #arrow-down {
   width: 32px;
-  height: 32px;
   cursor: pointer;
 }
 
@@ -176,4 +170,52 @@ footer .footer .Copyright {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  header a img {
+    width: 120px;
+  }
+
+  header .profil {
+    width: 2em;
+    height: 2em;
+  }
+
+  header .arrow-p #arrow-down {
+    width: 24px;
+    cursor: pointer;
+  }
+
+  .container h1, .container h2 {
+    margin-left: 15px;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .container h2 {
+    font-size: 1rem;
+  }
+
+  .aktivitas {
+    font-size: 0.86rem;
+  }
+
+  .aktivitasc {
+    margin: 25px auto;
+  }
+
+  .sertifikat {
+    font-size: 0.86rem;
+  }
+
+  .sertifikatc {
+    margin: 25px auto;
+  }
+
+  .sertifikatc button {
+    padding: 10px 20px;
+  }
+}
 
