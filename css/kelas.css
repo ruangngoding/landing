@@ -1,45 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+li,  a, button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
 body {
-    font-family: "nunito", sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    background-color: #fff;
-    position: sticky;
     top: 0;
-    padding: 10px 2%;
-    box-shadow: 3px 0 4px #000;
-    z-index: 9999;
-    font-size: 16px;
-    padding-right: 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 2px 3%;
+    background-color: white;
 }
-header li, header a {
-    font-size: 16px;
+
+nav {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
     text-decoration: none;
-    color: #000;
-    margin-right: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333; 
 }
-header nav {
-    margin-right: auto;
+
+.nav-list li:hover a {
+    color:#053B50 ;
 }
-header nav ul li {
-    padding: 0 20px;
-    display: inline-block;
-}
-header nav ul li a {
-    transition: all 0.3s ease 0s;
-}
-header nav ul li a:hover {
-    color: #176B87;
-}
-header .logonav {
-    width: 64px;
-    height: 49px;
+
+.logo {
     cursor: pointer;
+    width: 70px;
+    margin-right: 20px; 
 }
 header .profil {
     margin-left: auto;
@@ -66,6 +90,7 @@ header .arrow-p #arrow-down {
     display: flex;
     align-items: center;
     padding: 20px 60px;
+    margin-top: 65px;
 }
 
 .card .profil img {
@@ -77,14 +102,60 @@ header .arrow-p #arrow-down {
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    padding: 12px 30px;
     transition: all 0.3s ease 0s;
     background-color: #176B87;
     color: #fff;
+    width: 234px;
+    height: 39px;
+    font-weight: bold;
 }
 
 .card .profil button:hover {
     background-color: #03222e;
+}
+
+.ket h1 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.ket span {
+    border-radius: 6px;
+    border: none;
+    background-color: #D9D9D9;
+    padding: 1px 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.apa {
+    font-weight: bold;
+}
+
+.submission h5,
+.kuis h5,
+.modul h5,
+.sertifikat h5 {
+    font-weight: bold;
+}
+
+.submission,
+.kuis,
+.modul,
+.sertifikat {
+    width: 277px;
+    height: 133px;
+    background-color: #D9D9D9;
+} 
+
+.cont {
+    width: 80%;
+    margin : 40px auto;
+}
+
+.cont img {
+    height: 20px;
+    width: 20px;
 }
 
 footer {
