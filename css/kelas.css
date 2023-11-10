@@ -58,3 +58,31 @@ header .arrow-p #arrow-down {
     height: 32px;
     cursor: pointer;
 }
+
+.card {
+    width: 100%;
+    height: 418px;
+    background-image: url(/asset/img/topography.png);
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.card .profil img {
+    width: 234px;
+    height: 226px;
+}
+
+.card .profil button {
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 30px;
+    transition: all 0.3s ease 0s;
+    background-color: #176B87;
+    color: #fff;
+}
+
+.card .profil button:hover {
+    background-color: #03222e;
+}
