@@ -155,8 +155,9 @@ header nav {
     font-size: 32px;
     margin-bottom: 0.6em;
     color: #000000;
-    padding: 3px;
+    padding: 5px;
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
 
 }
 
