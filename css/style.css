@@ -129,8 +129,7 @@ header .sign button:hover {
   display: flex;
 }
  .content-img img {
-  margin: auto;
-  min-width: 200px;
+  margin: auto; 
   width: 400px;
 }
 #content button {
@@ -180,6 +179,10 @@ header .sign button:hover {
 .kelebihan .kel span {
   display: inline-block;
   flex-direction: row;
+}
+
+.kelebihan img {
+  width: 230px;
 }
 
 #learningpath {
@@ -289,6 +292,10 @@ header .sign button:hover {
   margin: 0 10px;
 }
 
+.card img {
+  width: 284px; 
+  height:348px;
+}
 
 
 footer {
@@ -307,24 +314,24 @@ footer .footer .Copyright {
 
 @media only screen and (max-width: 768px) {
   main {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
   
   #content {
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     gap: 1rem;
     height: 100vh;
   }
 
   .content-img {
     order: -1;
+    flex: none;
   }
   
   .content-img img {
-    margin: auto;
-    min-width: 200px;
-    width: 300px;
+    width: 250px;
+    height: 250px;
   }
 
   #tentangkami {
@@ -348,7 +355,20 @@ footer .footer .Copyright {
     transform: none;
   }
 
+  .kelebihan img {
+    width: 150px;
+  }
+
   .logo {
     width: 50px;
+  }
+
+  .content-desc h1{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    width: 260px;
   }
 }
