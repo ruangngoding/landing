@@ -227,6 +227,66 @@ footer .footer .Copyright {
     font-size: 14px;
 }
 
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    color: #03222e;
+  }
+  
+  .mobile-login,
+  .mobile-register {
+      display: none;
+  }
+  
+  .mobile-login button {
+      background-color: transparent;
+      color: #053B50;
+      border: 3px solid #053B50;
+      border-radius: 6px;
+      padding: .5rem 1rem;
+  }
+  
+  .mobile-register button{
+    background-color: #053B50;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 49px; 
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 1rem;
+    }
+  
+    .nav-list.show {
+        display: flex;
+    }
+  
+    .hamburger-menu {
+        display: block;
+    }
+  
+    .mobile-login,
+      .mobile-register {
+          display: block;
+          margin-top: 10px; 
+      }
+  }
+
 @media only screen and (max-width: 768px) {
     
     .contan {
@@ -293,6 +353,14 @@ footer .footer .Copyright {
     .tanyaakun p {
         text-align: center;
         margin-top: 7px;
+    }
+
+    .button-container {
+        display: none;
+      }
+
+    .logo {
+        width: 50px;
     }
 }
 
