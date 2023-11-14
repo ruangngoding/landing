@@ -225,4 +225,74 @@ footer .footer .Copyright {
     height: 70px;
     line-height: 70px;
     font-size: 14px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .contan {
+        margin: 6.25rem 2rem;
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contan h1 {
+        font-size: 1.5rem;
+    }
+
+    .contan button,
+    .tanyaakun p a {
+        font-size: 0.85rem;
+    }
+
+    .contan input {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contan button {
+        width: 100%;
+    }
+
+    .tanyaakun {
+        width: 100%;
+    }
+
+    .nama,
+    .email,
+    .pass {
+        margin-bottom: 15px;
+    }
+    .nama p,
+    .email p,
+    .pass p {
+        font-size: small;
+    }
+    .nama img,
+    .email img,
+    .pass img {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .nama h3,
+    .email h3,
+    .pass h3 {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: 0.85rem;
+        text-align: left; 
+    }
+
+    .tanyaakun p {
+        text-align: center;
+        margin-top: 7px;
+    }
+}
+
