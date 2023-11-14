@@ -205,11 +205,17 @@ header nav {
     margin-right: 5px; 
 }
 
-.footer p {
+.footer .arrow_left a,
+.footer .arrow_right a {
+    text-decoration: none;
     margin: 0; /* Hapus margin paragraf untuk menghindari ruang tambahan */
     color: #000000;
 }
 
+.footer .arrow_left a:hover,
+.footer .arrow_right a:hover {
+    color:#053B50;
+}
 
 .footer .arrow_left,
 .footer .arrow_right {

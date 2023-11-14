@@ -7,7 +7,6 @@ header li, header a {
     font-family: "Nunito", sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    text-decoration: none;
 }
 
 body {
@@ -39,18 +38,18 @@ header nav {
     align-items: center; 
 }
 
-.nav-list {
+header .nav-list {
     list-style: none;
     display: flex; 
     gap: 20px; 
     align-items: center; 
 }
 
-.nav-list li {
+header .nav-list li {
     margin: 0;
 }
 
-.nav-list li a {
+header .nav-list li a {
     text-decoration: none;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
@@ -58,7 +57,7 @@ header nav {
     color: #333; 
 }
 
-.nav-list li:hover a {
+header .nav-list li:hover a {
     color:#053B50;
 }
 
@@ -93,6 +92,7 @@ header nav {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .conteiner .sidebar ul li {
@@ -216,6 +216,20 @@ header nav {
     font-style: italic;
 }
 
+.conteiner .main_content .isi ol li {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner .main_content .isi ol li b {
+    font-weight: bold;
+}
+
+.conteiner .main_content .isi ol li ul li, 
+.conteiner .main_content .isi ol li{
+    margin-bottom: 10px;
+}
+
 .footer {
     display: flex;
     align-items: center; /* Pusatkan elemen secara vertikal */
@@ -236,11 +250,17 @@ header nav {
     margin-right: 5px; 
 }
 
-.footer p {
+.footer .arrow_left a,
+.footer .arrow_right a {
+    text-decoration: none;
     margin: 0; /* Hapus margin paragraf untuk menghindari ruang tambahan */
     color: #000000;
 }
 
+.footer .arrow_left a:hover,
+.footer .arrow_right a:hover {
+    color:#053B50;
+}
 
 .footer .arrow_left,
 .footer .arrow_right {
@@ -259,4 +279,5 @@ header nav {
 .footer .arrow_right img {
     margin-left: 10px;
 }
+
 
