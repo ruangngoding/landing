@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/kelas.css">
 </head>
 <body>
-    <header id="navbar">
+    <header>
         <div class="logo-container">
             <img class="logo" src="./asset/img/TI_UNIMA.png" alt="logo" href="#">
         </div>
@@ -23,11 +23,16 @@
             <ul class="nav-list">
                 <li><a href="#kelebihan">Learning Path</a></li>
                 <li><a href="#tentangkami">Tentang Kami</a></li>
+                <li class="mobile-login"><a href="#"><button>Masuk</button></a></li>
+                <li class="mobile-register"><a href="#"><button>Daftar</button></a></li>
             </ul>
         </nav>
-        <div class="profil"><img id="photo-profil" src="asset/img/user.svg" alt=""></div>
-        <div class="arrow-p"><img src="asset/img/arrow_down.svg" alt="" id="arrow-down"></div>
-    </header>
+        <div class="button-container">
+            <a class="log" href="#"><button>Masuk</button></a>
+            <a class="sign" href="#"><button>Daftar</button></a>
+        </div>
+        <button class="hamburger-menu">&#9776;</button>
+    </header> 
     <div class="card">
         <div class="profil">
             <img src="/asset/img/profil33.jpg" alt="Profil">
@@ -68,6 +73,8 @@
             Setelah menyelesaikan kelas ini, peserta akan memiliki dasar yang kuat dalam pemrograman web dan akan dapat membuat situs web sederhana dengan 
             tampilan menarik dan fungsionalitas dasar. Ini adalah langkah awal yang penting bagi mereka yang ingin mengejar karir menjadi front-end web developer.</p>
     </div>
+
+    <script src="script.js"></script>
     <footer>
         <div class="footer">
             <hr>
