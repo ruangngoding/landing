@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+header li, header a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 2px 3%;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+header nav {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333; 
+}
+
+.nav-list li:hover a {
+    color:#053B50;
+}
+
+.back {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    margin-right: 20px; 
+}
+
+.conteiner {
+    top: 10%;
+    display: flex;
+    position: relative;
+    height: 80%;
+    background: #f3f5f9;
+}
+
+.conteiner .sidebar {
+    position: fixed;
+    width: 200px;
+    padding: 30px 0;
+    background: #053B50;
+    color: #fff;
+    height: 80%;
+    overflow: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+.conteiner .sidebar h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.conteiner .sidebar ul li {
+    padding: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(225, 225, 225, 0.05);
+}
+
+.conteiner .sidebar ul li:hover {
+    background: #0a506c;
+}
+
+.conteiner .sidebar ul li a{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    color: #bebebe;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.conteiner .sidebar ul li a:hover {
+    color: #fff;
+    padding-left: 20px;
+}
+
+.conteiner .main_content {
+    width: 100%;
+    margin-left: 200px;
+    overflow: auto;
+}
+
+.conteiner .main_content .isi {
+    padding: 5px 30px;
+    line-height: 1.5em;
+}
+
+.conteiner .main_content .isi img {
+    width: 220px;
+    height: 220px;
+    margin: 1em 0;
+}
+
+.conteiner .main_content .isi a {
+    text-decoration: none;
+    color : #0f7da8;
+}
+
+.conteiner .main_content .isi a:hover {
+    color : #11a9e6;
+}
+
+.conteiner .main_content .title {
+    background: #ffffff;
+}
+
+.conteiner .main_content .title h3 {
+    margin-top: 1px;
+    font-size: 32px;
+    margin-bottom: 0.6em;
+    color: #000000;
+    padding: 5px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.conteiner .main_content .isi h4 {
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.conteiner .main_content .title h3,
+.conteiner .main_content .isi h4 {
+    font-weight: bold;
+}
+
+.conteiner .main_content .isi p {
+    font-size: 18px;
+    margin-bottom: 2em;
+    text-decoration: none;
+}
+
+.conteiner .main_content .isi p b {
+    font-weight: bold;
+}
+
+.conteiner .main_content .isi p i {
+    font-style: italic;
+}
+
+.footer {
+    display: flex;
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2px 20px;
+    background: rgba(255, 255, 255, 0.656);
+    height: 10%;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.footer img {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    margin-right: 5px; 
+}
+
+.footer .arrow_left a,
+.footer .arrow_right a {
+    text-decoration: none;
+    margin: 0; /* Hapus margin paragraf untuk menghindari ruang tambahan */
+    color: #000000;
+}
+
+.footer .arrow_left a:hover,
+.footer .arrow_right a:hover {
+    color:#053B50;
+}
+
+.footer .arrow_left,
+.footer .arrow_right {
+    display: flex;
+    align-items: center;
+}
+
+.footer .arrow_right {
+    justify-content: flex-end; /* Untuk memindahkan elemen ke sisi kanan */
+}
+
+.footer .arrow_left img {
+    margin-right: 10px;
+}
+
+.footer .arrow_right img {
+    margin-left: 10px;
+}
+
