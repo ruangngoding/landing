@@ -7,7 +7,6 @@ header li, header a {
     font-family: "Nunito", sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    text-decoration: none;
 }
 
 body {
@@ -39,18 +38,18 @@ header nav {
     align-items: center; 
 }
 
-.nav-list {
+header .nav-list {
     list-style: none;
     display: flex; 
     gap: 20px; 
     align-items: center; 
 }
 
-.nav-list li {
+header .nav-list li {
     margin: 0;
 }
 
-.nav-list li a {
+header .nav-list li a {
     text-decoration: none;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
@@ -58,7 +57,7 @@ header nav {
     color: #333; 
 }
 
-.nav-list li:hover a {
+header .nav-list li:hover a {
     color:#053B50;
 }
 
@@ -131,12 +130,6 @@ header nav {
     line-height: 1.5em;
 }
 
-.conteiner .main_content .isi img {
-    width: 220px;
-    height: 220px;
-    margin: 1em 0;
-}
-
 .conteiner .main_content .isi a {
     text-decoration: none;
     color : #0f7da8;
@@ -162,7 +155,7 @@ header nav {
 }
 
 .conteiner .main_content .isi h4 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 2px;
 }
 
@@ -184,6 +177,12 @@ header nav {
 .conteiner .main_content .isi p i {
     font-style: italic;
 }
+
+.conteiner .main_content .isi ul li img.center-image {
+    display: block;
+    margin: 0 auto 10px; /* Tambahkan nilai margin-bottom yang diinginkan di sini */
+}
+
 
 .footer {
     display: flex;
@@ -234,4 +233,5 @@ header nav {
 .footer .arrow_right img {
     margin-left: 10px;
 }
+
 
