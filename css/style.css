@@ -394,8 +394,10 @@ footer .footer .Copyright {
   }
 
   #tentangkami {
-    width: fit-content;
-    height: fit-content;
+    width: -moz-fit-content; /* Firefox 3+, Firefox for Android 4+ */
+    width: fit-content; /* Standar */
+    height: -moz-fit-content; /* Firefox 3+, Firefox for Android 4+ */
+    height: fit-content; /* Standar */
   }
 
   #tentangkami .lorempp {
