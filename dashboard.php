@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="shortcut icon" href="/asset/img/favicon_io/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/asset/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/asset/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/asset/img/favicon_io/favicon-16x16.png">
-    <link rel="android-chrome-192x192-icon" sizes="192x192" href="/asset/img/favicon_io/android-chrome-192x192.png">
-    <link rel="android-chrome-512x512-icon" sizes="512x512" href="/asset/img/favicon_io/android-chrome-512x512.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="asset/img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/img/favicon_io/favicon-16x16.png">
+    <link rel="android-chrome-192x192-icon" sizes="192x192" href="asset/img/favicon_io/android-chrome-192x192.png">
+    <link rel="android-chrome-512x512-icon" sizes="512x512" href="asset/img/favicon_io/android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
     <header>
-        <a href=""><img src="/asset/img/ruangngoding.png" alt="Ruang Ngoding"></a>
+        <a href="index.php"><img src="asset/img/ruangngoding.png" alt="Ruang Ngoding" ></a>
         <nav>
             <ul>
                 <li><a href="dashboard.html">Home</a></li>
             </ul>
         </nav>
-        <div class="profil"><img id="photo-profil" src="/asset/img/user.svg" alt=""></div>
-        <div class="arrow-p"><img src="/asset/img/arrow_down.svg" alt="" id="arrow-down"></div>
+        <div class="profil"><img id="photo-profil" src="asset/img/user.svg" alt=""></div>
+        <div class="arrow-p"><img src="asset/img/arrow_down.svg" alt="" id="arrow-down"></div>
     </header>
     <main>
         <div class="container">
@@ -32,7 +32,7 @@
         </div>
     
         <div class="aktivitas">
-            <img src="/asset/img/activity_feed.svg" alt="" style="height: 24px;">
+            <img src="asset/img/activity_feed.svg" alt="" style="height: 24px;">
             <h5>Aktivitas</h5>
             <div class="aktivitasc">
                 <h6>Belajar</h6>
@@ -47,7 +47,7 @@
         </div>
     
         <div class="sertifikat">
-            <img src="/asset/img/certificate.png" alt="" style="height: 24px;">
+            <img src="asset/img/certificate.png" alt="" style="height: 24px;">
             <h5>Sertifikat</h5>
             <div class="sertifikatc">
                 <h6>Selamat</h6>

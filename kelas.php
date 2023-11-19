@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img class="logo" src="./asset/img/TI_UNIMA.png" alt="logo" href="index.php">
+            <img class="logo" src="asset/img/TI_UNIMA.png" alt="logo" href="index.php">
         </div>
         <nav>
             <ul class="nav-list">
@@ -35,7 +35,7 @@
     </header> 
     <div class="card">
         <div class="profil">
-            <img src="/asset/img/profil33.jpg" alt="Profil">
+            <img src="asset/img/profil33.jpg" alt="Profil">
             <div class="button-container">
                 <button>Mulai Kelas</button>
             </div>
@@ -49,22 +49,22 @@
     <div class="cont">
         <p class="apa">Apa yang akan kamu dapatkan</p>
         <div class="sertifikat">
-            <img src="/asset/img/certificate.png" alt="Sertifikat">
+            <img src="asset/img/certificate.png" alt="Sertifikat">
             <h5>Sertifikat</h5>
             <p>Dapatkan sertifikat setelah menyelesaikan kelas ini</p>
         </div>
         <div class="modul">
-            <img src="/asset/img/folder.png" alt="Modul">
+            <img src="asset/img/folder.png" alt="Modul">
             <h5>Modul</h5>
             <p>Materi bacaan elektronik yang mudah dipahami</p>
         </div>
         <div class="kuis">
-            <img src="/asset/img/file.png" alt="Kuis">
+            <img src="asset/img/file.png" alt="Kuis">
             <h5>Kuis</h5>
             <p>Kuis pilihan ganda yang membantu memahami materi</p>
         </div>
         <div class="submission">
-            <img src="/asset/img/browser.png" alt="Submission">
+            <img src="asset/img/browser.png" alt="Submission">
             <h5>Submission</h5>
             <p>Uji kemampuan kamu dengan mengerjakan tugas submission</p>
         </div>
