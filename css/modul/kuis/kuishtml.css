@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+header li, header a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 2px 3%;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+header nav {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333; 
+}
+
+.nav-list li:hover a {
+    color:#053B50;
+}
+
+.back {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    margin-right: 20px; 
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #053B50;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #03222e;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+.footer {
+    display: flex;
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2px 20px;
+    background: rgba(255, 255, 255, 0.656);
+    height: 10%;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.footer img {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    margin-right: 5px; 
+}
+
+.footer .arrow_left a,
+.footer .arrow_right a {
+    text-decoration: none;
+    margin: 0; /* Hapus margin paragraf untuk menghindari ruang tambahan */
+    color: #000;
+}
+
+.footer .arrow_left a:hover,
+.footer .arrow_right a:hover {
+    color:#053B50;
+}
+
+.footer .arrow_left,
+.footer .arrow_right {
+    display: flex;
+    align-items: center;
+}
+
+.footer .arrow_right {
+    justify-content: flex-end; /* Untuk memindahkan elemen ke sisi kanan */
+}
+
+.footer .arrow_left img {
+    margin-right: 10px;
+}
+
+.footer .arrow_right img {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .app {
+        padding: 20px;
+    }
+
+    .quiz h2 {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    #next-btn {
+        font-size: 14px;
+        padding: 8px;
+        margin: 16px auto 0;
+    }
+
+}
