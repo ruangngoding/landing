@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+li,  a, button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 2px 1%;
+    background-color: white;
+}
+
+nav {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333; 
+}
+
+.nav-list li:hover a {
+    color:#053B50 ;
+}
+
+.logo {
+    cursor: pointer;
+    width: 70px;
+    margin-right: 20px; 
+}
+
+.button-container {
+    display: flex; 
+    gap: 20px; 
+    margin-left: auto; 
+}
+
+.button-container button{
+    background-color: transparent;
+    color: #053B50;
+    border: 3px solid #053B50;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+}
+
+.button-container a.log:hover button {
+    background-color: #053B50;
+    color: white;
+    border: 3px solid transparent;
+}
+
+.button-container a.sign button{
+    background-color: #053B50;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 6px;
+}
+
+.button-container a.sign:hover button{
+    background-color: #03222e;
+    color: white;
+    border: 3px solid transparent;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    background-image: url(/asset/img/topography.png);
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    margin-top: 65px;
+}
+
+.card .profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.card .profil img {
+    width: 234px;
+    height: 226px;
+}
+
+.card .profil .button-container {
+    margin-top: 10px;
+}
+
+.card .profil button {
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #176B87;
+    color: #fff;
+    width: 234px;
+    height: 39px;
+    font-weight: bold;
+}
+
+.card .profil button:hover {
+    background-color: #03222e;
+}
+
+.ket {
+    flex: 1; /* Menggunakan fleks untuk menyesuaikan tinggi secara otomatis */
+    margin-top: 20px; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+.ket h1 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.ket p {
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ket span {
+    border-radius: 6px;
+    border: none;
+    background-color: #176B87;
+    color: #fff;
+    padding: 2px 3px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+.apa {
+    font-weight: bold;
+}
+
+.submission h5,
+.kuis h5,
+.modul h5,
+.sertifikat h5 {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.submission,
+.kuis,
+.modul,
+.sertifikat {
+    width: 277px;
+    height: 133px;
+    background-color: #D9D9D9;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding : 5px;
+} 
+
+.cont {
+    max-width: 1228px;
+    margin : 40px auto;
+    
+}
+
+.cont img {
+    height: 20px;
+    width: 20px;
+    margin : 5px 10px 0 5px;
+}
+
+.cont h3 {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .footer hr {
+    width: 80%;
+}
+footer .footer .Copyright {
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    color: #03222e;
+}
+
+.mobile-login,
+.mobile-register {
+    display: none;
+}
+
+.mobile-login button {
+    background-color: transparent;
+    color: #053B50;
+    border: 3px solid #053B50;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+}
+
+.mobile-register button{
+    background-color: #053B50;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 49px; 
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 1rem;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-login,
+    .mobile-register {
+        display: block;
+        margin-top: 10px; 
+    }
+
+    .logo {
+        width: 50px;
+    }
+    
+    header .button-container {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card .profil {
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .ket {
+        margin-top: 20px;
+    }
+
+    .cont {
+        padding: 1rem;
+    }
+}
