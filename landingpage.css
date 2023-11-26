@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+li,  a, button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 2px 1%;
+    background-color: white;
+}
+
+nav {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333; 
+}
+
+.nav-list li:hover a {
+    color:#053B50 ;
+}
+
+.logo {
+    cursor: pointer;
+    width: 70px;
+    margin-right: 20px; 
+}
+
+header .profil {
+    margin-left: auto;
+    background-color: #e9e9e9;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    line-height: 3.3em;
+    border: 2px solid #053B50;
+    margin-right: 5px;
+    cursor: pointer;
+}
+header .arrow-p #arrow-down {
+    width: 32px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 12px;
+    text-align: center;
+}
+
+  /* Show the dropdown when it's open */
+.show {
+    display: block;
+}
+
+#content button:hover {
+    background-color: #03222e;
+    color: #fff;
+}
+
+#content {
+    max-width: 1200px;
+    width: 100%;
+    height: 90vh;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.content-desc h1 {
+    font-size: 2rem;
+    margin-block: 1rem;
+    font-weight: 700;
+}
+.content-desc p {
+    font-size: 1rem;
+}
+.content-img {
+    flex: 1;
+    display: flex;
+}
+.content-img img {
+    margin: auto; 
+    width: 400px;
+}
+#content button {
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease 0s;
+    margin-right: 1.25rem;
+    margin-top: 1.25rem;
+    background-color: #053B50;
+    color: #fff;
+    border: 3px solid #053B50;
+    font-family: 'Nunito', sans-serif;
+}
+
+.kelebihan {
+    background-color: #a9a9a9;
+    text-align: center;
+    margin: 3.125rem 0;
+    padding: 2rem;
+}
+.kelebihan h2 {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.kelebihan p {
+    font-size: 1rem;
+}
+.kelebihan .kel {
+    margin: 2rem 0 2.5rem 0;
+    text-align: center;
+}
+.kelebihan .kel .keu {
+    background-color: #fff;
+}
+.kelebihan .kel .keu .kurikurum, .kelebihan .kel .keu .blajarflex, .kelebihan .kel .keu .sertifikat {
+    text-align: left;
+    height: 33.1%;
+    line-height: 66.5px;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+.kelebihan .kel span {
+    display: inline-block;
+    flex-direction: row;
+}
+
+.kelebihan img {
+    width: 230px;
+}
+
+#learningpath {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3.125rem auto;
+    position: relative;
+}
+#learningpath h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#learningpath .learningpathstyle {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#learningpath .learningpathstyle .path-item {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    transition: all 1s ease;
+    margin-bottom: 1px;
+}
+#learningpath .learningpathstyle .path-item img {
+    width: 100%;
+    height: 100px;
+}
+#learningpath .learningpathstyle .path-item p {
+    background-color: #053B50;
+    color: #fff;
+    height: 100vh;
+    padding: 5px;
+}
+#learningpath .learningpathstyle .path-item:hover {
+    transform: translate(0, -120px);
+}
+
+#arrow-learning {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+#arrow-learning img {
+  width: 32px;
+  cursor: pointer;
+  align-items: end;
+  margin: 0 10px;
+}
+
+#tentangkami {
+  background-color: #fafafa;
+  box-shadow: 0 0 4px #000;
+  width: 60%;
+  display: flex;
+  margin: 50px auto 20px;
+}
+#tentangkami ul li {
+  list-style: none;
+}
+#tentangkami ul li .profil {
+  float: inline-start;
+  padding: 0 20px 0 0;
+}
+#tentangkami ul li .kt {
+  padding: 20px 10px;
+}
+#tentangkami ul li .kt .tprofil, #tentangkami ul li .kt .pmedsos {
+  margin: 0;
+}
+#tentangkami ul li .kt .tprofil {
+  height: 70%;
+}
+#tentangkami ul li .kt .pmedsos {
+  display: flex;
+  height: 30%;
+  align-items: center;
+}
+#tentangkami ul li .kt .lorempp {
+  font-size: 20px;
+}
+#tentangkami ul li .kt .p {
+  font-size: 16px;
+}
+#tentangkami ul li .kt .logomedsos {
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
+
+#arrow-profil {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+#arrow-profil img {
+  width: 32px;
+  align-items: end;
+  margin: 0 10px;
+}
+
+.card img {
+  width: 284px; 
+  height:348px;
+}
+
+
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .footer hr {
+  width: 80%;
+}
+footer .footer .Copyright {
+  height: 70px;
+  line-height: 70px;
+  font-size: 14px;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  color: #03222e;
+}
+
+.mobile-login,
+.mobile-register {
+    display: none;
+}
+
+.mobile-login button {
+    background-color: transparent;
+    color: #053B50;
+    border: 3px solid #053B50;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+}
+
+.mobile-register button{
+  background-color: #053B50;
+  color: #fff;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 49px; 
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 1rem;
+  }
+
+  .nav-list.show {
+      display: flex;
+  }
+
+  .hamburger-menu {
+      display: block;
+  }
+
+  .mobile-login,
+    .mobile-register {
+        display: block;
+        margin-top: 10px; 
+    }
+
+  main {
+    padding: 1rem 2rem;
+  }
+  
+  #content {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    height: 100vh;
+  }
+
+  .content-img {
+    order: -1;
+    flex: none;
+  }
+  
+  .content-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  #tentangkami {
+    width: -moz-fit-content; /* Firefox 3+, Firefox for Android 4+ */
+    width: fit-content; /* Standar */
+    height: -moz-min-content; /* Alternatif untuk Firefox */
+    height: min-content; /* Alternatif standar */
+  }
+  
+
+  #tentangkami .lorempp {
+    display: none;
+  }
+
+  #tentangkami ul li .profil {
+    padding: 0;
+  }
+
+  #learningpath .item-desc {
+    display: none;
+  }
+
+  #learningpath .learningpathstyle .path-item:hover {
+    transform: none;
+  }
+
+  .kelebihan img {
+    width: 150px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .content-desc h1{
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .kelebihan h2,
+  #learningpath h2 {
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    width: 260px;
+  }
+
+  .button-container {
+    display: none;
+  }
+}
