@@ -23,7 +23,17 @@
             </ul>
         </nav>
         <div class="profil"><img id="photo-profil" src="asset/img/user.svg" alt=""></div>
-        <div class="arrow-p"><img src="asset/img/arrow_down.svg" alt="" id="arrow-down"></div>
+        <div class="arrow-p" id="arrow-down-container">
+            <img src="asset/img/arrow_down.svg" alt="" id="arrow-down">
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <!-- Add your dropdown menu content here -->
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <div class="container">
@@ -62,6 +72,7 @@
         </div>
         <div class="k"></div>
     </main>
+    <script src="dashboard.js"></script>
     <footer>
         <div class="footer">
             <hr>
