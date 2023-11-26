@@ -294,7 +294,7 @@ footer .footer .Copyright {
         width: 50px;
     }
     
-    .button-container {
+    header .button-container {
         display: none;
     }
 }
