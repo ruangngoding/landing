@@ -12,7 +12,7 @@
     <link rel="android-chrome-192x192-icon" sizes="192x192" href="asset/img/favicon_io/android-chrome-192x192.png">
     <link rel="android-chrome-512x512-icon" sizes="512x512" href="asset/img/favicon_io/android-chrome-512x512.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="css/masuk.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <header>
@@ -37,7 +37,7 @@
         <section class="input-section">
             <form id="inputDaftar" action="login_process.php" method="post">
                 <div class="contan">
-                    <h1>Daftarkan Akun Ruang Ngoding</h1>
+                    <h1>Masuk Akun Ruang Ngoding</h1>
 
                     <div class="email">
                         <img src="asset/img/mail.svg" alt="">

@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
         echo "
             <Script>
                 alert('data berhasil ditambahkan!');
-                document.location.href = 'dashboard.php';
+                document.location.href = 'masuk.php';
             </Script>
         ";  
     }else {

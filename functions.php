@@ -2,7 +2,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "ruang_ngoding";
+$database = "ruangngoding";
 
 // Menghubungkan ke database MySQL
 $conn = mysqli_connect($host, $username, $password, $database);
@@ -14,9 +14,8 @@ function cekLogin($email, $password) {
     global $conn;
 
     $email = mysqli_real_escape_string($conn, trim($email));
-    $password = mysqli_real_escape_string($conn, $password);
 
-    $query = "SELECT * FROM data_user WHERE email = '$email'";
+    $query = "SELECT * FROM user WHERE email = '$email'";
     echo "Query: $query<br>";
     $result = mysqli_query($conn, $query);
 
@@ -25,7 +24,7 @@ function cekLogin($email, $password) {
     }
 
     while ($row = mysqli_fetch_assoc($result)) {
-        // Verifikasi password
+        // Verifikasi password menggunakan password_verify
         if (password_verify($password, $row['password'])) {
             return true; // Email dan password cocok
         }
@@ -43,7 +42,7 @@ function tambah($data) {
     $email = htmlspecialchars($data['email']);
     $password = password_hash(htmlspecialchars($data['password']), PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO data_user VALUES ('','$username','$email','$password')";
+    $query = "INSERT INTO user VALUES ('','$username','$email','$password')";
     $result = mysqli_query($conn, $query);
 
     if (!$result) {
@@ -58,7 +57,7 @@ function getFirstName($username) {
 
     $username = mysqli_real_escape_string($conn, $username);
 
-    $query = "SELECT username FROM data_user WHERE username = '$username'";
+    $query = "SELECT username FROM user WHERE username = '$username'";
     $result = mysqli_query($conn, $query);
 
     if (!$result) {
@@ -74,5 +73,4 @@ function getFirstName($username) {
 
     return $namaDepan;
 }
-
 ?>
