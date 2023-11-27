@@ -12,7 +12,7 @@
     <link rel="android-chrome-192x192-icon" sizes="192x192" href="asset/img/favicon_io/android-chrome-192x192.png">
     <link rel="android-chrome-512x512-icon" sizes="512x512" href="asset/img/favicon_io/android-chrome-512x512.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="css/masuk.css">
+    <link rel="stylesheet" href="masuk.css">
 </head>
 <body>
     <header>
