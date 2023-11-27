@@ -13,6 +13,7 @@
     <link rel="android-chrome-192x192-icon" sizes="192x192" href="asset/img/favicon_io/android-chrome-192x192.png">
     <link rel="android-chrome-512x512-icon" sizes="512x512" href="asset/img/favicon_io/android-chrome-512x512.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="landingpage.css">
 </head>
 <body>
     <header>
@@ -28,7 +29,17 @@
             </ul>
         </nav>
         <div class="profil"><img id="photo-profil" src="asset/img/user.svg" alt=""></div>
-        <div class="arrow-p"><img src="asset/img/arrow_down.svg" alt="" id="arrow-down"></div>
+        <div class="arrow-p" id="arrow-down-container">
+            <img src="asset/img/arrow_down.svg" alt="" id="arrow-down">
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <!-- Add your dropdown menu content here -->
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
     </header> 
     <main>
         <div id="content">
@@ -138,6 +149,7 @@
     </main>
 
     <script src="script.js"></script>
+    <script src="dashboard.js"></script>
     <footer>
         <div class="footer">
             <hr>
