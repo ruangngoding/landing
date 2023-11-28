@@ -1,3 +1,7 @@
+<?php
+session_start();
+require 'functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +51,7 @@
             </div>
         </div>
         <div class="ket">
-            <h1>Belajar Dasar Pemrograman Web</h1>
+            <h1 id="judulKelas">Belajar Dasar Pemrograman Web</h1>
             <p>Teknologi : <span>Web</span></p>
             <p>Pelajari dasar HTML & CSS yang merupakan fondasi utama <br>untuk menjadi front-end web developer</p>
         </div>

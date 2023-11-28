@@ -52,12 +52,12 @@ function tambah($data) {
     return mysqli_affected_rows($conn);
 }
 
-function getFirstName($username) {
+function getFirstName($email) {
     global $conn;
 
-    $username = mysqli_real_escape_string($conn, $username);
+    $email = mysqli_real_escape_string($conn, $email);
 
-    $query = "SELECT username FROM user WHERE username = '$username'";
+    $query = "SELECT username FROM user WHERE email = '$email'";
     $result = mysqli_query($conn, $query);
 
     if (!$result) {
@@ -108,7 +108,7 @@ function tambahhtml($data) {
     }
 
     // Setelah berhasil, arahkan ke dashboard.php
-    header("Location: dashboard.php");
+    header("Location: ../dashboard.php");
     exit(); // Pastikan tidak ada output setelah header
 }
 
@@ -130,4 +130,41 @@ function getHtmlFiles() {
 
     return $htmlFiles;
 }
+
+
+    function generateRandomID($length = 7) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $id = '';
+    for ($i = 0; $i < $length; $i++) {
+        $id .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $id;
+    }
+
+    $id_sertifikat = generateRandomID();
+
+
+
+    function getFullName($email) {
+        global $conn;
+    
+        $email = mysqli_real_escape_string($conn, $email);
+    
+        $query = "SELECT username FROM user WHERE email = '$email'";
+        $result = mysqli_query($conn, $query);
+    
+        if (!$result) {
+            die("Query gagal: " . mysqli_error($conn));
+        }
+    
+        $fullName = "Nama"; // Default jika tidak ada hasil
+    
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $fullName = $row['username'];
+        }
+    
+        return $fullName;
+    }
+    
 ?>

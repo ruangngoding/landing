@@ -1,8 +1,16 @@
 <?php
-session_start();
-require 'functions.php';
+    session_start();
+    require 'functions.php';
 
-$namaDepan = isset($_SESSION['username']) ? getFirstName($_SESSION['username']) : 'Pengunjung';
+    // ...
+
+    $namaDepan = isset($_SESSION['username']) ? getFirstName($_SESSION['username']) : 'Pengunjung';
+
+    // // Debugging: Tampilkan nilai $_SESSION['username']
+    // echo "Nilai \$_SESSION['username']: " . $_SESSION['username'] . "<br>";
+
+    // // Debugging: Tampilkan nilai $namaDepan
+    // echo "Nilai \$namaDepan: " . $namaDepan . "<br>";
 ?>
 
 <!DOCTYPE html>
@@ -69,7 +77,7 @@ $namaDepan = isset($_SESSION['username']) ? getFirstName($_SESSION['username']) 
             <div class="sertifikatc">
                 <h6>Selamat</h6>
                 <p>Sertifikat untuk kelas Belajar Dasar Promograman Web</p>
-                <a href="sertifikat.html"><button>Lihat Sertifikat</button></a>
+                <a href="sertifikat.php"><button>Lihat Sertifikat</button></a>
             </div>
             <div class="sertifikatc">
                 <h6>Selamat</h6>
