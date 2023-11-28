@@ -35,9 +35,9 @@
         <div class="dropdown-menu" id="dropdown-menu">
             <!-- Add your dropdown menu content here -->
             <ul>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Settings</a></li>
-              <li><a href="#">Log Out</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="logout.php">Log Out</a></li>
             </ul>
         </div>
     </header> 

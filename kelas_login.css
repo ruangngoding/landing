@@ -32,6 +32,17 @@ header {
     background-color: white;
 }
 
+header li, header a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+}
+
+header a:hover {
+    color: #176B87;
+}
+
 nav {
     display: flex; 
     align-items: center; 
@@ -66,38 +77,6 @@ nav {
     margin-right: 20px; 
 }
 
-.button-container {
-    display: flex; 
-    gap: 20px; 
-    margin-left: auto; 
-}
-
-.button-container button{
-    background-color: transparent;
-    color: #053B50;
-    border: 3px solid #053B50;
-    border-radius: 6px;
-    padding: .5rem 1rem;
-}
-
-.button-container a.log:hover button {
-    background-color: #053B50;
-    color: white;
-    border: 3px solid transparent;
-}
-
-.button-container a.sign button{
-    background-color: #053B50;
-    color: white;
-    border: 3px solid transparent;
-    border-radius: 6px;
-}
-
-.button-container a.sign:hover button{
-    background-color: #03222e;
-    color: white;
-    border: 3px solid transparent;
-}
 
 header .profil {
     margin-left: auto;
@@ -335,9 +314,7 @@ footer .footer .Copyright {
         width: 50px;
     }
     
-    header .button-container {
-        display: none;
-    }
+
 }
 
 @media (max-width: 768px) {

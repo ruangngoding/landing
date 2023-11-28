@@ -12,7 +12,7 @@
     <link rel="android-chrome-192x192-icon" sizes="192x192" href="asset/img/favicon_io/android-chrome-192x192.png">
     <link rel="android-chrome-512x512-icon" sizes="512x512" href="asset/img/favicon_io/android-chrome-512x512.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="css/kelas.css">
+    <link rel="stylesheet" href="kelas_login.css">
 </head>
 <body>
     <header>
@@ -21,23 +21,29 @@
         </div>
         <nav>
             <ul class="nav-list">
-                <li><a href="index.php#kelebihan">Learning Path</a></li>
-                <li><a href="index.php#tentangkami">Tentang Kami</a></li>
-                <li class="mobile-login"><a href="masuk.php"><button>Masuk</button></a></li>
-                <li class="mobile-register"><a href="daftar.php"><button>Daftar</button></a></li>
+                <li><a href="landingpage.php#kelebihan">Learning Path</a></li>
+                <li><a href="landingpage.php#tentangkami">Tentang Kami</a></li>
             </ul>
         </nav>
-        <div class="button-container">
-            <a class="log" href="masuk.php"><button>Masuk</button></a>
-            <a class="sign" href="daftar.php"><button>Daftar</button></a>
+        <div class="profil"><img id="photo-profil" src="asset/img/user.svg" alt=""></div>
+        <div class="arrow-p" id="arrow-down-container">
+            <img src="asset/img/arrow_down.svg" alt="" id="arrow-down">
         </div>
-        <button class="hamburger-menu">&#9776;</button>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <!-- Add your dropdown menu content here -->
+            <ul>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="logout.php">Log Out</a></li>
+            </ul>
+        </div>
     </header> 
     <div class="card">
         <div class="profil">
             <img src="asset/img/profil33.jpg" alt="Profil">
             <div class="button-container">
-                <button>Mulai Kelas</button>
+                <a href="modul/pengenalan.html"><button>Mulai Kelas</button></a>
+                
             </div>
         </div>
         <div class="ket">
@@ -75,6 +81,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="dashboard.js"></script>
     <footer>
         <div class="footer">
             <hr>

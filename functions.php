@@ -73,4 +73,61 @@ function getFirstName($username) {
 
     return $namaDepan;
 }
+
+function tambahhtml($data) {
+    global $conn;
+
+    $name = htmlspecialchars($data['name']);
+    $file = $_FILES['htmlFile'];
+
+    // Direktori untuk menyimpan file
+    $upload_dir = 'uploads/';
+
+    // Periksa apakah direktori sudah ada, jika tidak, buat
+    if (!is_dir($upload_dir)) {
+        mkdir($upload_dir, 0777, true);
+    }
+
+    // Ambil data file
+    $filename = $file['name'];
+    $tmp_path = $file['tmp_name'];
+
+    // Tentukan nama file baru berdasarkan input nama
+    $new_filename = $name . '_' . uniqid() . '.html';
+    $target_path = $upload_dir . $new_filename;
+
+    // Simpan file ke direktori server
+    move_uploaded_file($tmp_path, $target_path);
+
+    // Simpan informasi file ke database
+    $sql = "INSERT INTO berkas (name, filename, path) VALUES ('$name', '$new_filename', '$target_path')";
+    $result = mysqli_query($conn, $sql);
+
+    if (!$result) {
+        die("Query gagal: " . mysqli_error($conn));
+    }
+
+    // Setelah berhasil, arahkan ke dashboard.php
+    header("Location: dashboard.php");
+    exit(); // Pastikan tidak ada output setelah header
+}
+
+function getHtmlFiles() {
+    global $conn;
+
+    $sql = "SELECT * FROM berkas";
+    $result = mysqli_query($conn, $sql);
+
+    if (!$result) {
+        die("Query gagal: " . mysqli_error($conn));
+    }
+
+    $htmlFiles = [];
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        $htmlFiles[] = $row;
+    }
+
+    return $htmlFiles;
+}
 ?>

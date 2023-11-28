@@ -393,9 +393,10 @@ footer .footer .Copyright {
   #tentangkami {
     width: -moz-fit-content; /* Firefox 3+, Firefox for Android 4+ */
     width: fit-content; /* Standar */
-    height: -moz-fit-content; /* Firefox 3+, Firefox for Android 4+ */
-    height: fit-content; /* Standar */
+    height: -moz-min-content; /* Alternatif untuk Firefox */
+    height: min-content; /* Alternatif standar */
   }
+  
 
   #tentangkami .lorempp {
     display: none;

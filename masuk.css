@@ -162,28 +162,31 @@ header .sign button:hover {
 }
 
 
+
+.nama,
 .email,
 .pass {
     margin-bottom: 30px;
 }
 
-
+.nama img,
 .email img,
 .pass img,
-.email label,
-.pass label {
+.nama h3,
+.email h3,
+.pass h3 {
     display: inline;
     vertical-align: middle;
 }
 
-
-.email label,
-.pass label,
+.nama h3,
+.email h3,
+.pass h3,
 .tanyaakun p a {
     font-weight: bold;
 }
 
-
+.nama img,
 .email img,
 .pass img {
     width: 22px;
@@ -192,7 +195,7 @@ header .sign button:hover {
 }
 
 
-
+.nama p,
 .email p,
 .pass p {
     margin-top: 0;
@@ -278,7 +281,7 @@ footer .footer .Copyright {
     }
 
     .mobile-login,
-        .mobile-register {
+    .mobile-register {
         display: block;
         margin-top: 10px; 
     }
@@ -317,17 +320,17 @@ footer .footer .Copyright {
         width: 100%;
     }
 
-
+    .nama,
     .email,
     .pass {
         margin-bottom: 15px;
     }
-
+    .nama p,
     .email p,
     .pass p {
         font-size: small;
     }
-
+    .nama img,
     .email img,
     .pass img {
         width: 18px;
@@ -337,8 +340,9 @@ footer .footer .Copyright {
         vertical-align: middle;
     }
 
-    .email label,
-    .pass label {
+    .nama h3,
+    .email h3,
+    .pass h3 {
         display: inline-block;
         vertical-align: middle;
         font-weight: bold;
@@ -359,4 +363,3 @@ footer .footer .Copyright {
         width: 50px;
     }
 }
-

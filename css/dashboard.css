@@ -46,30 +46,6 @@ header .arrow-p #arrow-down {
   cursor: pointer;
 }
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown-menu li {
-  padding: 12px;
-  text-align: center;
-}
-
-/* Show the dropdown when it's open */
-.show {
-  display: block;
-}
-
 .container {
   margin: 0;
   background-image: url(/asset/img/AnyConv.com__alex-shutin-kKvQJ6rK6S4-unsplash.webp);
@@ -206,7 +182,7 @@ footer .footer .Copyright {
   }
 
   header .arrow-p #arrow-down {
-    width: 20px;
+    width: 24px;
     cursor: pointer;
   }
 

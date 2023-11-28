@@ -36,7 +36,7 @@ $namaDepan = isset($_SESSION['username']) ? getFirstName($_SESSION['username']) 
         <div class="dropdown-menu" id="dropdown-menu">
             <!-- Add your dropdown menu content here -->
             <ul>
-                <li><a href="#">Dashboard</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
                 <li><a href="#">Settings</a></li>
                 <li><a href="logout.php">Log Out</a></li>
             </ul>
@@ -69,7 +69,7 @@ $namaDepan = isset($_SESSION['username']) ? getFirstName($_SESSION['username']) 
             <div class="sertifikatc">
                 <h6>Selamat</h6>
                 <p>Sertifikat untuk kelas Belajar Dasar Promograman Web</p>
-                <a href=""><button>Lihat Sertifikat</button></a>
+                <a href="sertifikat.html"><button>Lihat Sertifikat</button></a>
             </div>
             <div class="sertifikatc">
                 <h6>Selamat</h6>

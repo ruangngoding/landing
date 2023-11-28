@@ -32,17 +32,6 @@ header {
     background-color: white;
 }
 
-header li, header a {
-  font-size: 16px;
-  text-decoration: none;
-  color: #000;
-  margin-right: 10px;
-}
-
-header a:hover {
-  color: #176B87;
-}
-
 nav {
     display: flex; 
     align-items: center; 

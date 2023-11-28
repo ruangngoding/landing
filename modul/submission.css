@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito:wght@400;700&display=swap");
+
+body {
+    font-family: "nunito", sans-serif;
+    background-color: #E8E8E8;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 10px 2%;
+    z-index: 9999;
+    font-size: 16px;
+    padding-right: 10%;
+}
+
+header li, header a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+}
+
+header a img {
+    width: 180px;
+    cursor: pointer;
+}
+
+header a:hover {
+    color: #176B87;
+}
+
+header .profil {
+    margin-left: auto;
+    background-color: #e9e9e9;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    line-height: 3.3em;
+    border: 2px solid #053B50;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+header .arrow-p #arrow-down {
+    width: 32px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Show the dropdown when it's open */
+.show {
+    display: block;
+}
+
+.k {
+    height: 100px;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footer hr {
+    width: 80%;
+}
+
+footer .footer .Copyright {
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container .berkas {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.container .berkas form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .berkas form input {
+    margin-bottom: 10px;
+}
+
+.container .berkas form button {
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #176B87;
+    color: #fff;
+    text-decoration: none;
+    padding: 2% 20px;
+}
+
+.container .berkas form #name {
+    padding: 10px;
+    border: none;
+    background-color: #e8e8e8;
+    color: #000000;
+    border-bottom: 2px solid #176B87;
+}
+
+.container .berkas form button:hover {
+    background-color: #03222e;
+}
+
+.container .berkas a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    header a img {
+        width: 120px;
+    }
+
+    header .profil {
+        width: 2em;
+        height: 2em;
+    }
+
+    header .arrow-p #arrow-down {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .container {
+        display: none;
+        min-width: 270px;
+        max-width: 600px;
+        width: 280px;
+    }
+
+    .container h1 {
+        font-size: 18px;
+    }
+
+}
