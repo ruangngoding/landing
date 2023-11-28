@@ -42,7 +42,9 @@ function tambah($data) {
     $email = htmlspecialchars($data['email']);
     $password = password_hash(htmlspecialchars($data['password']), PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO user VALUES ('','$username','$email','$password')";
+    // Pastikan sesuai dengan struktur tabel user yang baru
+    $query = "INSERT INTO user (username, email, password, uploaded) VALUES ('$username', '$email', '$password', 0)";
+    
     $result = mysqli_query($conn, $query);
 
     if (!$result) {
@@ -51,6 +53,7 @@ function tambah($data) {
 
     return mysqli_affected_rows($conn);
 }
+
 
 function getFirstName($email) {
     global $conn;
@@ -79,6 +82,7 @@ function tambahhtml($data) {
 
     $name = htmlspecialchars($data['name']);
     $file = $_FILES['htmlFile'];
+    $email = $_SESSION['username']; // Menggunakan email dari sesi
 
     // Direktori untuk menyimpan file
     $upload_dir = 'uploads/';
@@ -100,10 +104,18 @@ function tambahhtml($data) {
     move_uploaded_file($tmp_path, $target_path);
 
     // Simpan informasi file ke database
-    $sql = "INSERT INTO berkas (name, filename, path) VALUES ('$name', '$new_filename', '$target_path')";
+    $sql = "INSERT INTO berkas (name, filename, path, uploaded) VALUES ('$name', '$new_filename', '$target_path', 1)";
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
+        die("Query gagal: " . mysqli_error($conn));
+    }
+
+    // Perbarui status 'uploaded' pengguna di tabel 'user'
+    $updateUserSql = "UPDATE user SET uploaded = 1 WHERE email = '$email'";
+    $updateUserResult = mysqli_query($conn, $updateUserSql);
+
+    if (!$updateUserResult) {
         die("Query gagal: " . mysqli_error($conn));
     }
 
@@ -111,6 +123,7 @@ function tambahhtml($data) {
     header("Location: ../dashboard.php");
     exit(); // Pastikan tidak ada output setelah header
 }
+
 
 function getHtmlFiles() {
     global $conn;
@@ -166,5 +179,28 @@ function getHtmlFiles() {
     
         return $fullName;
     }
+
+    function getUserUploadStatus($email) {
+        global $conn;
+    
+        $email = mysqli_real_escape_string($conn, $email);
+    
+        $query = "SELECT uploaded FROM user WHERE email = '$email'";
+        $result = mysqli_query($conn, $query);
+    
+        if (!$result) {
+            die("Query gagal: " . mysqli_error($conn));
+        }
+    
+        // Jika ada hasil, kembalikan nilai uploaded
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            return $row['uploaded'] == 1;
+        }
+    
+        // Jika tidak ada hasil, pengguna belum mengunggah
+        return false;
+    }
+    
     
 ?>

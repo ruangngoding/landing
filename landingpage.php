@@ -1,6 +1,13 @@
 <?php
 session_start();
 require 'functions.php';
+
+// Pengecekan apakah pengguna sudah login
+if (!isset($_SESSION['username'])) {
+    // Jika belum login, redirect ke halaman masuk.php
+    header('Location: masuk.php');
+    exit(); // Pastikan untuk menghentikan eksekusi skrip setelah melakukan redirect
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,8 +35,6 @@ require 'functions.php';
             <ul class="nav-list">
                 <li><a href="#kelebihan">Learning Path</a></li>
                 <li><a href="#tentangkami">Tentang Kami</a></li>
-                <li class="mobile-login"><a href="masuk.php"><button>Masuk</button></a></li>
-                <li class="mobile-register"><a href="daftar.php"><button>Daftar</button></a></li>
             </ul>
         </nav>
         <div class="profil"><img id="photo-profil" src="asset/img/user.svg" alt=""></div>
@@ -40,7 +45,7 @@ require 'functions.php';
             <!-- Add your dropdown menu content here -->
             <ul>
                 <li><a href="dashboard.php">Dashboard</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="settings.php">Settings</a></li>
                 <li><a href="logout.php">Log Out</a></li>
             </ul>
         </div>
@@ -76,8 +81,8 @@ require 'functions.php';
             <h2>Learning Path</h2>
             <div class="learningpathstyle">
                 <div class="path-item">
-                    <img src="asset/img/front.jpg" alt="">
-                    <p class="item-desc">Pelajari dasar HTML & CSS yang merupakan fondasi utama untuk menjadi front-end web developer</p>
+                    <a href="kelas_login.php"><img src="asset/img/front.jpg" alt=""></a>
+                    <a href="kelas_login.php"><p class="item-desc">Pelajari dasar HTML & CSS yang merupakan fondasi utama untuk menjadi front-end web developer</p></a>
                 </div>
                 <div class="path-item">
                     <img src="asset/img/back.jpg" alt="">

@@ -1,6 +1,13 @@
 <?php
 session_start();
 require 'functions.php';
+
+// Pengecekan apakah pengguna sudah login
+if (!isset($_SESSION['username'])) {
+    // Jika belum login, redirect ke halaman masuk.php
+    header('Location: masuk.php');
+    exit(); // Pastikan untuk menghentikan eksekusi skrip setelah melakukan redirect
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +44,7 @@ require 'functions.php';
             <!-- Add your dropdown menu content here -->
             <ul>
                 <li><a href="dashboard.php">Dashboard</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="settings.php">Settings</a></li>
                 <li><a href="logout.php">Log Out</a></li>
             </ul>
         </div>
@@ -46,8 +53,7 @@ require 'functions.php';
         <div class="profil">
             <img src="asset/img/profil33.jpg" alt="Profil">
             <div class="button-container">
-                <a href="modul/pengenalan.html"><button>Mulai Kelas</button></a>
-                
+                <a href="modul/pengenalan.php"><button>Mulai Kelas</button></a>
             </div>
         </div>
         <div class="ket">

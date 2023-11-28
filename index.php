@@ -64,8 +64,8 @@
             <h2>Learning Path</h2>
             <div class="learningpathstyle">
                 <div class="path-item">
-                    <img src="asset/img/front.jpg" alt="">
-                    <p class="item-desc">Pelajari dasar HTML & CSS yang merupakan fondasi utama untuk menjadi front-end web developer</p>
+                    <a href="kelas.php"><img src="asset/img/front.jpg" alt=""></a>
+                    <a href="kelas.php"><p class="item-desc">Pelajari dasar HTML & CSS yang merupakan fondasi utama untuk menjadi front-end web developer</p></a>
                 </div>
                 <div class="path-item">
                     <img src="asset/img/back.jpg" alt="">

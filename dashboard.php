@@ -2,6 +2,15 @@
     session_start();
     require 'functions.php';
 
+    // // Debugging: Tampilkan nilai $_SESSION['username']
+    // echo "Nilai \$_SESSION['username']: " . $_SESSION['username'] . "<br>";
+
+    // Pengecekan apakah pengguna sudah login
+    if (!isset($_SESSION['username'])) {
+        // Jika belum login, redirect ke halaman masuk.php
+        header('Location: masuk.php');
+        exit(); // Pastikan untuk menghentikan eksekusi skrip setelah melakukan redirect
+    }
     // ...
 
     $namaDepan = isset($_SESSION['username']) ? getFirstName($_SESSION['username']) : 'Pengunjung';
@@ -11,6 +20,7 @@
 
     // // Debugging: Tampilkan nilai $namaDepan
     // echo "Nilai \$namaDepan: " . $namaDepan . "<br>";
+
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +44,7 @@
         <a href="landingpage.php"><img src="asset/img/ruangngoding.png" alt="Ruang Ngoding" ></a>
         <nav>
             <ul>
-                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="dashboard.php">Home</a></li>
             </ul>
         </nav>
         <div class="profil"><img id="photo-profil" src="asset/img/user.svg" alt=""></div>
@@ -45,7 +55,7 @@
             <!-- Add your dropdown menu content here -->
             <ul>
                 <li><a href="dashboard.php">Dashboard</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="settings.php">Settings</a></li>
                 <li><a href="logout.php">Log Out</a></li>
             </ul>
         </div>
@@ -62,7 +72,7 @@
             <div class="aktivitasc">
                 <h6>Belajar</h6>
                 <p>Belajar Dasar Promograman Web</p>
-                <a href="">Lanjutkan</a>
+                <a href="modul/pengenalan.php">Lanjutkan</a>
             </div>
             <div class="aktivitasc">
                 <h6>Belajar</h6>
@@ -74,11 +84,21 @@
         <div class="sertifikat">
             <img src="asset/img/certificate.png" alt="" style="height: 24px;">
             <h5>Sertifikat</h5>
-            <div class="sertifikatc">
-                <h6>Selamat</h6>
-                <p>Sertifikat untuk kelas Belajar Dasar Promograman Web</p>
-                <a href="sertifikat.php"><button>Lihat Sertifikat</button></a>
-            </div>
+            <?php
+                $userUploaded = getUserUploadStatus($_SESSION['username']);
+                if ($userUploaded) {
+                    echo '<div class="sertifikatc">';
+                    echo '<h6>Selamat</h6>';
+                    echo '<p>Sertifikat untuk kelas Belajar Dasar Promograman Web</p>';
+                    echo '<a href="sertifikat.php"><button>Lihat Sertifikat</button></a>';
+                    echo '</div>';
+                } else {
+                    echo '<div class="sertifikatc">';
+                    echo '<h6>Belum Selesai</h6>';
+                    echo '<p>Anda belum selesaikan kelas Belajar Dasar Promograman Web</p>';
+                    echo '</div>';
+                }
+            ?>
             <div class="sertifikatc">
                 <h6>Selamat</h6>
                 <p>Sertifikat untuk kelas Belajar Lanjutan Promograman Web</p>

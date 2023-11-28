@@ -16,7 +16,7 @@ header {
   font-size: 16px;
   padding-right: 10%;
 }
-header li, header a {
+header li, header a, a {
   font-size: 16px;
   text-decoration: none;
   color: #000;
@@ -26,7 +26,7 @@ header a img {
   width: 180px;
   cursor: pointer;
 }
-header a:hover {
+header a:hover, a:hover {
   color: #176B87;
 }
 header .profil {

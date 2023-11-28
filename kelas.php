@@ -37,7 +37,7 @@
         <div class="profil">
             <img src="asset/img/profil33.jpg" alt="Profil">
             <div class="button-container">
-                <button>Mulai Kelas</button>
+                <a href="modul/pengenalan.php"><button>Mulai Kelas</button></a>
             </div>
         </div>
         <div class="ket">

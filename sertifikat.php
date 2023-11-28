@@ -7,6 +7,12 @@
     // print_r($_SESSION);
     // echo '</pre>';
 
+    // Pengecekan apakah pengguna sudah login
+    if (!isset($_SESSION['username'])) {
+        // Jika belum login, redirect ke halaman masuk.php
+        header('Location: masuk.php');
+        exit(); // Pastikan untuk menghentikan eksekusi skrip setelah melakukan redirect
+    }
 ?>
 
 
@@ -32,7 +38,7 @@
         <a href="landingpage.php"><img src="asset/img/ruangngoding.png" alt="Ruang Ngoding" ></a>
         <nav>
             <ul>
-                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="dashboard.php">Home</a></li>
             </ul>
         </nav>
         <div class="profil"><img id="photo-profil" src="asset/img/user.svg" alt=""></div>
@@ -58,7 +64,7 @@
                 <p>Atas kelulusannya pada kelas:</p>
                 <h2 id="kelas"></h2>
                 <p class="tgl">Tanggal diberikan: <?php echo date('j F, Y'); ?></p>
-                <h2 id="id-sertifikat">ID SERTIFIKAT: <br><p><?php echo $id_sertifikat; ?></p></h2>
+                <h2 id="id-sertifikat">ID SERTIFIKAT: <br><p><?php echo strtoupper($id_sertifikat); ?></p></h2>
             </div>
         </div>
 
