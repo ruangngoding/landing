@@ -49,7 +49,7 @@
             <!-- Add your dropdown menu content here -->
             <ul>
                 <li><a href="dashboard.php">Dashboard</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="settings.php">Settings</a></li>
                 <li><a href="logout.php">Log Out</a></li>
             </ul>
         </div>

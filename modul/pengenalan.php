@@ -52,10 +52,10 @@ $htmlFiles = getHtmlFiles();
                 <li><a href="html/sejarahhtml.html">Sejarah HTML</a></li>
                 <li><a href="html/strukturhtml.html">Struktur HTML</a></li>
                 <li><a href="html/elementhtml.html">Element HTML</a></li>
-                <li><a href="kuis/kuishtml.html">Kuis HTML</a></li>
+                <li><a href="kuis/kuishtml.php">Kuis HTML</a></li>
                 <li><a href="css/sejarahcss.html">Sejarah CSS</a></li>
                 <li><a href="css/elementcss.html">Element CSS</a></li>
-                <li><a href="kuis/kuiscss.html">Kuis CSS</a></li>
+                <li><a href="kuis/kuiscss.php">Kuis CSS</a></li>
                 <li><a href="submission.php">Submission</a></li>
             </ul>
         </div>

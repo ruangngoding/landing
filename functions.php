@@ -202,5 +202,28 @@ function getHtmlFiles() {
         return false;
     }
     
+    // function getImagePath($email) {
+    //     global $conn;
+    
+    //     $email = mysqli_real_escape_string($conn, $email);
+    
+    //     $query = "SELECT image_path FROM user WHERE email = '$email'";
+    //     $result = mysqli_query($conn, $query);
+    
+    //     if (!$result) {
+    //         die("Query gagal: " . mysqli_error($conn));
+    //     }
+    
+    //     $imagePath = "path/to/default/image.jpg"; // Ganti dengan path default jika tidak ada gambar
+    
+    //     if ($result->num_rows > 0) {
+    //         $row = $result->fetch_assoc();
+    //         $imagePath = $row['image_path'];
+    //     }
+    
+    //     return $imagePath;
+    // }
+    
+
     
 ?>

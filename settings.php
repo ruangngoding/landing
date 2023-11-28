@@ -130,52 +130,50 @@
                     $fullNameFormatted = ucwords(strtolower($fullName));
                     ?>
 
-                    <div class="form-group">
+                  <form action="ubah_profil.php" method="post">
+                      <div class="form-group">
                         <label class="form-label" for="namaLengkap">Nama Lengkap</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="namaLengkap"
-                            value="<?php echo $fullNameFormatted; ?>"
-                        />
-                    </div>
+                        <input type="text" class="form-control" id="namaLengkap" name="namaLengkap" value="<?php echo $fullNameFormatted; ?>" />
+                      </div>
 
-                    <div class="form-group">
+                      <div class="form-group">
                         <label class="form-label" for="email">E-mail</label>
-                        <input
-                            type="text"
-                            class="form-control mb-1"
-                            id="email"
-                            value="<?php echo $emailLowerCase; ?>"
-                        />
-                    </div>
+                        <input type="text" class="form-control mb-1" id="email" name="email" value="<?php echo $emailLowerCase; ?>" />
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Simpan</button>
+                  </form>
                 </div>
                 </div>
                 <div class="tab-pane fade" id="account-change-password">
                   <div class="card-body pb-2">
-                    <div class="form-group">
-                      <label class="form-label" for="passwordSekarang">Password Sekarang</label>
-                      <input type="password" class="form-control" id="passwordSekarang" title="Password Sekarang" />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="passwordBaru">Password Baru</label>
-                      <input type="password" class="form-control" id="passwordBaru" title="Password Baru" />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="ulangiPasswordBaru">Ulangi Password Baru</label>
-                      <input type="password" class="form-control" id="ulangiPasswordBaru" title="Ulangi Password Baru" />
-                    </div>
+                    <form action="ubah_password.php" method="post">
+                      <div class="form-group">
+                        <label class="form-label" for="passwordSekarang">Password Sekarang</label>
+                        <input type="password" class="form-control" id="passwordSekarang" name="passwordSekarang" title="Password Sekarang" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for="passwordBaru">Password Baru</label>
+                        <input type="password" class="form-control" id="passwordBaru" name="passwordBaru" title="Password Baru" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for="ulangiPasswordBaru">Ulangi Password Baru</label>
+                        <input type="password" class="form-control" id="ulangiPasswordBaru" name="ulangiPasswordBaru" title="Ulangi Password Baru" />
+                      </div>
+                      <button type="submit" class="btn btn-primary">Simpan</button>
+                    </form>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="text-right mt-3">
+        <!-- <div class="text-right mt-3">
           <button type="submit" class="btn btn-primary">Simpan</button
           >&nbsp;
           <button type="submit" class="btn btn-default">Batal</button>
-        </div>
+        </div> -->
       </div>
       <div class="k"></div>
     </main>
