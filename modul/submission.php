@@ -1,5 +1,13 @@
 <?php
+session_start();
 require '../functions.php';
+
+// Pengecekan apakah pengguna sudah login
+if (!isset($_SESSION['username'])) {
+    // Jika belum login, redirect ke halaman masuk.php
+    header('Location: ../masuk.php');
+    exit(); // Pastikan untuk menghentikan eksekusi skrip setelah melakukan redirect
+}
 
 if (isset($_POST['unggah'])) {
     tambahhtml($_POST);
@@ -7,6 +15,7 @@ if (isset($_POST['unggah'])) {
 
 $htmlFiles = getHtmlFiles();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +37,7 @@ $htmlFiles = getHtmlFiles();
         <a href="../landingpage.php"><img src="../asset/img/ruangngoding.png" alt="Ruang Ngoding" ></a>
         <nav>
             <ul>
-                <li><a href="../dashboard.html">Home</a></li>
+                <li><a href="../dashboard.php">Home</a></li>
             </ul>
         </nav>
         <div class="profil"><img id="photo-profil" src="../asset/img/user.svg" alt=""></div>
@@ -39,7 +48,7 @@ $htmlFiles = getHtmlFiles();
             <!-- Add your dropdown menu content here -->
             <ul>
                 <li><a href="../dashboard.php">Dashboard</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="../settings.php">Settings</a></li>
                 <li><a href="../logout.php">Log Out</a></li>
             </ul>
         </div>
@@ -64,7 +73,7 @@ $htmlFiles = getHtmlFiles();
 
 
         <div class="selamat">
-            <a href="">Unduh File Anda</a>
+        <a href="unduh_file.php">Unduh File Anda</a>
         </div>
 
         <div class="k"></div>
