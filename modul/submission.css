@@ -164,6 +164,34 @@ footer .footer .Copyright {
     text-decoration: none;
 }
 
+.selamat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.selamat a {
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 20px;
+    background-color: #053B50;
+    color: #fff;
+    border: 3px solid #053B50;
+    font-family: 'Nunito', sans-serif;
+}
+
+.selamat a:hover {
+    background-color: #03222e;
+}
+
+
 @media only screen and (max-width: 768px) {
     main {
         padding: 1rem;

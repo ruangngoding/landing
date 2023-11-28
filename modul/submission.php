@@ -25,10 +25,10 @@ $htmlFiles = getHtmlFiles();
 </head>
 <body>
     <header>
-        <a href="landingpage.php"><img src="../asset/img/ruangngoding.png" alt="Ruang Ngoding" ></a>
+        <a href="../landingpage.php"><img src="../asset/img/ruangngoding.png" alt="Ruang Ngoding" ></a>
         <nav>
             <ul>
-                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="../dashboard.html">Home</a></li>
             </ul>
         </nav>
         <div class="profil"><img id="photo-profil" src="../asset/img/user.svg" alt=""></div>
@@ -38,9 +38,9 @@ $htmlFiles = getHtmlFiles();
         <div class="dropdown-menu" id="dropdown-menu">
             <!-- Add your dropdown menu content here -->
             <ul>
-                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="../dashboard.php">Dashboard</a></li>
                 <li><a href="#">Settings</a></li>
-                <li><a href="logout.php">Log Out</a></li>
+                <li><a href="../logout.php">Log Out</a></li>
             </ul>
         </div>
     </header>
@@ -60,6 +60,11 @@ $htmlFiles = getHtmlFiles();
                 </form>
 
             </div>
+        </div>
+
+
+        <div class="selamat">
+            <a href="">Unduh File Anda</a>
         </div>
 
         <div class="k"></div>
