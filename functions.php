@@ -30,9 +30,14 @@ function cekLogin($email, $password) {
         }
     }
 
-    // Jika loop selesai tanpa return, berarti password tidak cocok
-    echo "Login gagal: Password tidak cocok untuk email yang diberikan.";
-    return false;
+    // Arahkan kembali ke halaman masuk.php
+    echo "
+            <Script>
+                alert('data yang dimasukan salah!');
+                document.location.href = 'masuk.php';
+            </Script>
+        ";
+    exit();
 }
 
 function tambah($data) {
